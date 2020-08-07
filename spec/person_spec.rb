@@ -13,7 +13,7 @@ RSpec.describe 'Person' do
 
     describe '#initialize' do
       describe '#name' do
-        it 'a new person knows its name once he/she has been initialized' do
+        it 'a new person knows its name once they have been initialized' do
           name_hash.each do |person, name|
             expect(person.name).to eq(name)
           end
@@ -31,7 +31,7 @@ RSpec.describe 'Person' do
           people.each { |person| expect(person.bank_account).to eq(25) }
         end
 
-        it 'a person instance can change his/her bank_account amount' do
+        it 'a person instance can change their bank_account amount' do
           people.each do |person|
             original_amount = person.bank_account
             expect(person.bank_account += 1).to eq (original_amount + 1)
@@ -44,7 +44,7 @@ RSpec.describe 'Person' do
           people.each { |person| expect(person.happiness).to eq(8) }
         end
 
-        it 'a person instance can change his/her happiness index' do
+        it 'a person instance can change their happiness index' do
           people.each do |person|
             person.happiness = 9
             expect(person.happiness).to eq(9)
